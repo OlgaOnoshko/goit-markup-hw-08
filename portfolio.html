@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <section class="header__section section">
+            <!-- навігація -->
+            <div class="container header__nav">
+                <a href="" class="logo header__logo">
+                    <span class="header__logo--span">Web</span>Studio
+                </a>
+                <nav>
+                    <ul class="navigation">
+                        <li class="navigation__item"><a href="./index.html" class="navigation__link">Студия</a></li>
+                        <li class="navigation__item"><a href="./portfolio.html" class="navigation__link  navigation__link--current">Портфолио</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+                    </ul>
+                </nav>
+    
+                <!-- Контакти-->
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a href="info@devstudio.com" class="contacts__link"><svg class="contacts__icon" width="16px"
+                                height="12px">
+                                <use href="./images/svg/icons.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="+380961111111" class="contacts__link"><svg class="contacts__icon" width="10px"
+                                height="16px">
+                                <use href="./images/svg/icons.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!--Кнопки фільтра-->
+        <section class="section">
+        <div class="container portfolio">
+        <h1 class="visually-hidden">Портфолио</h1>
+        <div>
+        <ul class="gallery-nav">
+            <li class="gallery-nav__item">
+                <button type="button" class="button primary">Все</button>
+            </li>
+            <li class="gallery-nav__item">
+                <button type="button" class="button">Веб-сайты</button>
+            </li>
+            <li class="gallery-nav__item">
+                <button type="button" class="button">Приложения</button>
+            </li>
+            <li class="gallery-nav__item">
+                <button type="button" class="button">Дизайн</button>
+            </li>
+            <li class="gallery-nav__item">
+                <button type="button" class="button">Маркетинг</button>
+            </li>
+        </ul>
+        </div>
+        <!--Альбом  -->
+        <div>
+        <ul class="gallery">
+                <li class="gallery__item">
+                    <div class="gallery__thumb">
+                    <a href="" class="link gallery__link">
+                        <img src="./images/porfolio/technocrack.jpg" alt="Технокряк" width="370" height="294" class="gallery__pic">
+                        </div>
+                        <div class="gallery__content">
+                        <h2 class="gallery__title">Технокряк</h2>
+                        <p class="gallery__work">Веб-сайт</p>
+                        </div>
+                    </a>
+                    </li>
+                <li class="gallery__item">
+                    <div class="gallery__thumb">
+                    <a href="" class="link gallery__link">
+                    <img src="./images/porfolio/poster-new-orlean.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294" class="gallery__pic">
+                    </div>
+                    <div class="gallery__content">
+                    <h2 class="gallery__title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                    <p class="gallery__work">Дизайн</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <div class="gallery__thumb">
+                    <a href="" class="link gallery__link">
+                    <img src="./images/porfolio/rest-seafood.jpg" alt="Ресторан Seafood" width="370" height="294" class="gallery__pic">
+                    </div>
+                    <div class="gallery__content">
+                    <h2 class="gallery__title">Ресторан <span lang="en">Seafood</span></h2>
+                    <p class="gallery__work">Приложение</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <div class="gallery__thumb">
+                    <a href="" class="link gallery__link">
+                    <img src="./images/porfolio/project-prime.jpg" alt="Проект Prime" width="370" height="294" class="gallery__pic">
+                    </div>
+                    <div class="gallery__content">
+                    <h2 class="gallery__title">Проект <span lang="en">Prime</span></h2>
+                    <p class="gallery__work">Маркетинг</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <div class="gallery__thumb">
+                    <a href="" class="link gallery__link">
+                    <img src="./images/porfolio/project-boxes.jpg" alt="Проект Boxes" width="370" height="294" class="gallery__pic">
+                    </div>
+                    <div class="gallery__content">
+                    <h2 class="gallery__title">Проект <span lang="en">Boxes</span></h2>
+                    <p class="gallery__work">Приложение</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <div class="gallery__thumb">
+                    <a href="" class="link gallery__link">
+                    <img src="./images/porfolio/inspiration.jpg" alt="Inspiration has no Borders" width="370" height="294" class="gallery__pic">
+                    </div>
+                    <div class="gallery__content">
+                    <h2 class="gallery__title" lang="en">Inspiration has no Borders</h2>
+                    <p class="gallery__work">Веб-сайт</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <div class="gallery__thumb">
+                    <a href="" class="link gallery__link">
+                    <img src="./images/porfolio/limited-editions.jpg" alt="Издание Limited Edition" width="370" height="294" class="gallery__pic">
+                    </div>
+                    <div class="gallery__content">
+                    <h2 class="gallery__title">Издание <span lang="en">Limited Edition</span></h2>
+                    <p class="gallery__work">Дизайн</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <div class="gallery__thumb">
+                    <a href="" class="link gallery__link">
+                    <img src="./images/porfolio/project-lab.jpg" alt="Проект LAB" width="370" height="294" class="gallery__pic">
+                    </div>
+                    <div class="gallery__content">
+                    <h2 class="gallery__title">Проект <span lang="en">LAB</span></h2>
+                    <p class="gallery__work">Маркетинг</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <div class="gallery__thumb">
+                    <a href="" class="link gallery__link">
+                    <img src="./images/porfolio/growing-business.jpg" alt="Growing Business" width="370" height="294" class="gallery__pic">
+                    </div>
+                    <div class="gallery__content">
+                    <h2 class="gallery__title" lang="en">Growing Business</h2>
+                    <p class="gallery__work">Приложение</p>
+                    </div>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!--Футер-->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__contacts">
+                <a href="" class="logo footer__logo">
+                    <span class="footer__logo--span">Web</span><span class="footer__logo--end">Studio</span>
+                </a>
+                <address>
+                    <ul class="footer__address">
+                        <li class="footer__location"> <a href="https://goo.gl/maps/Wv8Y8Ao4LumDGfkv7" target="_blank"
+                                rel="noopener noreferrer" class="footer__nav link">г. Киев,
+                                пр-т Леси Украинки, 26</a> </li>
+                        <li class="footer__email"> <a href="mailto:info@example.com" class="link">info@example.com</a></li>
+                        <li> <a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+    
+            <!-- лінки на соцмережі -->
+    
+            <div class="footer__social">
+                <h2 class="footer__title">присоединяйтесь</h2>
+                <ul class="social">
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <svg class="social__image" width="20px" height="20px">
+                                <use href="./images/svg/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <svg class="social__image" width="20px" height="20px">
+                                <use href="./images/svg/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <svg class="social__image" width="20px" height="20px">
+                                <use href="./images/svg/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <svg class="social__image" width="20px" height="20px">
+                                <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- форма підписки на розсилку -->
+    
+            <div class="footer__subscribe">
+                <h2 class="footer__title">подпишитесь на рассылку</h2>
+                <div class="subscribe">
+                    <form class="subscribe-form">
+                        <input type="Email" class="subscribe-form__input" name="user-email" placeholder="E-mail">
+                    </form>
+                    <button type="submit" class="subscribe-button">
+                        Подписаться
+                        <span>
+                            <svg class="subscribe-button__image" width="24px" height="24px">
+                                <use href="./images/svg/icons.svg#icon-send"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

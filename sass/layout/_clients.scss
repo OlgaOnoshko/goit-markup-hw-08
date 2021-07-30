@@ -1,0 +1,86 @@
+.clients {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  // @media screen and (min-width: 480px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   margin: -15px;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+.clients__item {
+  // @media screen and (min-width: 480px) {
+  //   width: (calc((100% - 60px) / 2));
+  //   margin: 15px;
+  // }
+  @media screen and (max-width: 767px) {
+    width: (calc((100% - 60px) / 2));
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: (calc((100% - 90px) / 3));
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    flex-basis: 170px;
+  }
+}
+
+.clients__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  padding: 0;
+  background-color: inherit;
+  fill: var(--team-clients-icon-color);
+  border: solid 1px var(--team-clients-icon-color);
+  border-radius: 4px;
+
+  transition: fill var(--transition-time) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--blue-accent);
+    border: solid 1px var(--blue-accent);
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 480px) {
+    // flex-basis: 50%;
+    // width: 210px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+.clients__image {
+  display: inline-block;
+}

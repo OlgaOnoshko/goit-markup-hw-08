@@ -1,0 +1,36 @@
+.activity {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.activity__list {
+  padding-bottom: 94px;
+}
+.activity__list img {
+  display: block;
+}
+.activity__item {
+  position: relative;
+}
+.activity__overlay {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--main-background-hero-adress-color);
+  background-color: #2f303acc;
+}

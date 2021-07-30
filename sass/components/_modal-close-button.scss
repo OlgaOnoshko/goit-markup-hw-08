@@ -1,0 +1,25 @@
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  border: 1px solid #0000001a;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: var(--transition-time) var(--timing-function);
+
+  &:focus,
+  &:hover {
+    fill: var(--blue-accent);
+  }
+}

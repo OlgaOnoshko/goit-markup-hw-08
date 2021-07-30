@@ -1,0 +1,109 @@
+.gallery__title {
+  color: var(--secondary-header-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.gallery-nav {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.gallery-nav__item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  & .button:hover {
+    box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+      0px 3px 1px 0px #0000001a;
+  }
+  & .button:focus {
+    box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+      0px 3px 1px 0px #0000001a;
+  }
+}
+
+.gallery__link {
+  display: block;
+}
+.gallery__work {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.gallery__link {
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.gallery__pic {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+}
+.gallery__content {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery__item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  transition: box-shadow var(--transition-time) var(--timing-function);
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  &:hover {
+    box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+      0px 1px 1px 0px #0000001f;
+
+    & .gallery__thumb::before {
+      transform: translateY(0);
+    }
+  }
+}
+
+/* синій оверлей */
+.gallery__thumb {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    display: inline-block;
+    content: "Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.";
+    color: var(--main-background-hero-adress-color);
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+
+    transform: translateY(100%);
+
+    transition: transform var(--transition-time) var(--timing-function);
+  }
+}

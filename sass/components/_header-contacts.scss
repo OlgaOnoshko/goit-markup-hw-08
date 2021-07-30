@@ -1,0 +1,64 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.contacts__icon {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+
+  transition: fill var(--transition-time) var(--timing-function);
+}
+.contacts__item + .contacts__item {
+  margin-left: 50px;
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color var(--transition-time) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--blue-accent);
+    cursor: pointer;
+
+    & svg,
+    & svg {
+      fill: var(--blue-accent);
+    }
+  }
+}
+
+// контакти і соціальні для мобільного
+.nav-contacts {
+  margin-bottom: 64px;
+}
+.phone-link {
+  display: block;
+  text-decoration: none;
+  font-size: 34px;
+  line-height: 1.17;
+  color: var(--blue-accent);
+  margin-bottom: 32px;
+}
+
+.email-link {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.17;
+  color: var(--primary-text-color);
+}

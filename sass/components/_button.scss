@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  color: var(--secondary-header-color);
+  background-color: var(--team-section-background-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  transition: color var(--transition-time) var(--timing-function),
+    background-color var(--transition-time) var(--timing-function),
+    box-shadow var(--transition-time) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--team-section-background-color);
+    background-color: var(--blue-accent);
+  }
+}
+
+.primary {
+  color: var(--main-background-hero-adress-color);
+  background-color: var(--blue-accent);
+}
