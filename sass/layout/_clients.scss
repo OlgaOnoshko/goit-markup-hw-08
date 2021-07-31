@@ -15,37 +15,33 @@
   padding: 0;
   margin: 0;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
 
-  // @media screen and (min-width: 480px) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   margin: -15px;
-  // }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 
   @media screen and (min-width: 1200px) {
+    width: 1200px;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
 }
 .clients__item {
-  // @media screen and (min-width: 480px) {
-  //   width: (calc((100% - 60px) / 2));
-  //   margin: 15px;
-  // }
+  @media screen and (max-width: 1199px) {
+    width: (calc((100% - 90px) / 3));
+    margin: 15px;
+  }
+
   @media screen and (max-width: 767px) {
     width: (calc((100% - 60px) / 2));
     margin: 15px;
   }
 
-  @media screen and (min-width: 768px) {
-    width: (calc((100% - 90px) / 3));
-    margin: 15px;
-  }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
     flex-basis: 170px;

@@ -1,11 +1,29 @@
 .team-section {
   background-color: var(--team-section-background-color);
-  padding-bottom: 94px;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team {
   margin-top: 0;
   margin-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    margin: 0;
+  }
 }
 .team__card {
   background-color: var(--main-background-hero-adress-color);
@@ -13,18 +31,46 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 480px) {
     width: 450px;
     height: 622px;
   }
   @media screen and (min-width: 768px) {
-    width: 354px;
+    width: (calc((100% - 60px) / 2));
     height: 536px;
+    margin: 15px;
   }
   @media screen and (min-width: 1200px) {
-    // width: 354px;
+    width: 270px;
+    height: 428px;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
+
+.team__pic {
+  max-width: 450px;
+  height: 460px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 260px;
+  }
+}
+
 .team__name {
   color: var(--secondary-header-color);
   font-weight: 500;
@@ -34,11 +80,13 @@
   margin-top: 0;
   margin-bottom: 10px;
 }
+
 .team__pic {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .team__position {
   font-size: 16px;
   line-height: 1.2;
@@ -47,7 +95,12 @@
   margin-bottom: 0;
   padding-bottom: 16px;
 }
+
 .team__text {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }

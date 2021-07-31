@@ -1,9 +1,13 @@
 .navigation {
   display: flex;
-  margin-left: 93px;
+  margin-left: 88px;
 
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 .navigation__item + .navigation__item {
@@ -50,6 +54,7 @@
 // хедер мобілка
 
 .header__nav {
+  position: relative;
   display: flex;
   align-items: center;
 

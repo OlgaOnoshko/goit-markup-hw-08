@@ -13,7 +13,7 @@
     margin-right: 20px;
   }
 }
-li:not(:last-child)::after {
+.nav-social__item:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 10px;
