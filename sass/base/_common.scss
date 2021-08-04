@@ -48,22 +48,20 @@ body {
 
 /* Заголовки Секцій */
 
-.section__title,
-.team__title {
-  color: var(--secondary-header-color);
-  margin-top: 0;
-  margin-bottom: 50px;
-}
 .section__title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
+  color: var(--secondary-header-color);
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.2;
+    margin-bottom: 50px;
   }
 }
 
